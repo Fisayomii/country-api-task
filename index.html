@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1, initial-scale=1.0" />
+    <title>Countries Api</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="link">
+          <p class="link">Where in the World?</p>
+        </a>
+      </nav>
+    </header>
+    <section>
+      <div class="input-container">
+        <div class="left">
+          <button onClick="{handleClick}" id="click" class="click-btn"><i class="bi bi-search"></i>
+          </button>
+          <input
+            type="text"
+            name="country"
+            id="country"
+            placeholder="Search for a country..."
+            class="text-input"
+          />
+        </div>
+        <div>
+          <select name="countries" id="countries" class="text-input" size={20}>
+            <option value="Hello">All</option>
+            <option value="Hello">Africa</option>
+            <option value="Hello">Asia</option>
+            <option value="Hello">North America</option>
+            <option value="Hello">South America</option>
+            <option value="Hello">Europe</option>
+            <option value="Hello">Oceania</option>
+            <option value="Hello">Antartica</option>
+            <option value="Hello">Australia</option>
+          </select>
+        </div>
+      </div>
+      <div class="card-container" id="card-container">
+    </div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
