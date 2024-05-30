@@ -19,6 +19,9 @@ async function fetchCountryDetails() {
             capital: country.capital,
             flag: country.flags.png,
             nativeName: Object.entries(country.name.nativeName)[0][1].common,
+            region: country.region,
+            subregion: country.subregion,
+            borderCountries: formatBorderCountries(data, country.borders)
         }
     
     // result.forEach(country => {
@@ -46,6 +49,8 @@ function displayDetails(obj) {
                 <p>Continent: ${obj.continent}<p>
                 <p>Capital: ${obj.capital}<p>
                 <p>Capital: ${obj.nativeName}<p>
+                <p>Region: ${obj.region}<p>
+                <p>Subregion: ${obj.subregion}<p>
                 <div>
         </div>`
     countryDetails.innerHTML = countrydetails
