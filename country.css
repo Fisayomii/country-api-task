@@ -1,3 +1,14 @@
 .flex {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    gap: 90px;
+}
+.back-btn {
+    padding: 5px 10px;
+    font-size: large;
+}
+.details-container {
+    
 }

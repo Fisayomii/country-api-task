@@ -13,10 +13,8 @@ async function fetchCountries() {
     if (!response.ok) {
       throw new Error("Network response was not ok");
     }
-    const countriesData = await response.json();
-    // console.log("test",countriesData[0]);
+    const countriesData = await response.json()
     const result = countriesData.map((item) => {
-    //   console.log(item.cca3);
       return {
         name: item.name.common,
         population: item.population.toLocaleString(),
